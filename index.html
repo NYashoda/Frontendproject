@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+      
+      <i><a class="navbar-brand" href="#">
+        <img src="images\icon.png"  alt="logo" height="30" width="30" class="d-inline-block" >Tanishq Jewellary</a></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#Products">Products</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#Team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+          <!-- Search -->
+          
+    
+            <button class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+       
+      </ul>
+      <!-- dark-mode -->
+      <button onclick="darkandlightmode()"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" onclick="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16" >
+        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/></button>
+      </svg>
+      <script>
+       function darkandlightmode(){
+        var element = document.body;
+         element.classList.toggle("dark-mode");
+           }
+           </script>
+           
+  </div>
+</div>
+      
+      
+      <!-- login -->
+
+    <button class="btn btn-danger rounded-pill  fs-5 my-lg-0 my-2" > <a href="login.html">login</a></button>
+       
+    <!-- Example single danger button -->
+
+  </nav>
+  
+<!-- -----home page -->
+  <section id="home">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="images\bg6.avif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="images\bg1.jpg" class="d-block w-100" alt="...">
+              </div>
+        <div class="carousel-item">
+          <img src="images\bg6.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images\bg1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images\bg6.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images\bg1.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    </section>
+     <!-- ------about----- -->
+     <section id="about">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                    
+                   
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="about.webp" class="img-fluid">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2>Tanishq Jewellary</h2>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+                  <h1>ABOUT US</h1>
+                  <p style="font-size:20px;">Pure gold is incredibly durable. It's the most non-reactive of all metals: it won't react with oxygen or most chemicals, meaning it won't tarnish, rust or perish. This makes it perfect for use in jewellery and high status objects which are intended to retain their value and finish indefinitely.The unique colour and shine, combined with the fact it doesn't tarnish, gave gold a unique edge over other metals and the rarity installed confidence because people could have faith it would hold its value as the difficulty in mining gold meant no-one could try to devalue the metal as a currency.</p>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ------product page---------- -->
+  <section id="Products">
+    <div class="container m-5">
+      <h1 class="text-center my-5">OUR PRODUCTS</h1>
+      <div class="row">
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\ring1.jpg" width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ring-100$</h5>
+                    
+                    <a href="login.html" class="btn signin"><button>Buy Now</button></a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\ring6.jpg"width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ring-250$</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\ring5.jpeg" width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ring-300$</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\ring4.jpeg"width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ring-300$</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\neck1.jpeg"width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">necklace-$350</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\neck2.jpg"width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Necklace-$300</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+              <div class="card">
+                  <img src="images\neck3.jpg"width="300px" height="200px" class="card-img-top">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Necklace-450$</h5>
+                    <a href="login.html" class="btn signin">Buy Now</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="card">
+                <img src="images\neck4.jpg" width="300px" height="200px" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Necklace-$350</h5>
+                  <a href="login.html" class="btn signin">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\bangle3.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Bangles-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\bangle4.webp" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Bangles-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\bangle5.webp" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">bangles-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\bangle6.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Bangles-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\coin1.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Gold Coin-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\coin2.webp" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Gold Coin-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\coin3.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Gold Coin-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\coin4.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Gold Coin-450$</h5>
+        <a href="#" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\dia1.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Diamond Necklace-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\dia2.jpeg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Diamond Necklace-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\dia3.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Diamond Rings -450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-12">
+  <div class="card">
+      <img src="images\dia4.jpg" width="300px" height="200px" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Diamond earrings-450$</h5>
+        <a href="login.html" class="btn signin">Buy Now</a>
+      </div>
+    </div>
+</div>
+</div>
+  </div>
+</section>
+
+<!-- facebook -->
+  <div id="chat">
+<a href="https://www.facebook.com/login/web/?email=6300212871&is_from_lara=1"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-facebook me-4" style="color:blue; position:fixed; top: 400px; right:0px;" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+</a>
+</div>
+<!-- videoes -->
+<section style="margin: 50px;">
+  <h1 style="background-color: brown; color: white;">Videoes</h1>
+  <iframe width="400" height="315" src="https://www.youtube.com/embed/FWiMgI_CtuI?si=ofe3FUgJBuPiW30p"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="400" height="315" src="https://www.youtube.com/embed/nuGgJqWn9Rs?si=xDuyvtRy8j8mt8Nj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="400" height="315" src="https://www.youtube.com/embed/U1L6ERKecSU?si=cfSQRVsXagFgi_ce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</section>
+<!-- Team start here --> 
+<section id="Team">
+  <div class="content-wrapper">
+    <h1>Team</h1>
+    <div class="blue-line"></div>
+    <div class="wrapper-for-arrows">
+      <div style="opacity: 0;" class="chicken"></div>
+      <div id="reviewWrap" class="review-wrap">
+        <div id="imgDiv" class="">
+        </div>
+        <div id="personName"></div>
+        <div id="profession"></div>
+        <div id="description">
+        </div>
+      </div>
+      <div id="surpriseMeBtn" class="surprise-me-btn">Surprise me</div>
+      <div class="left-arrow-wrap arrow-wrap">
+        <div class="arrow" id="leftArrow"></div>
+      </div>
+      <div class="right-arrow-wrap arrow-wrap">
+        <div class="arrow" id="rightArrow"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="main.js"></script>
+</section>
+  <!-- -----contact page------ -->
+  <section id="Contact">
+    <div class="container-fluid box">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="images\contact.jpg" class="img-fluid" style="height: 350px;">
+              <p style="color:brown; font-size: 20px;"><i>If you have questions or <br>just want to get in touch,<br>use the form below.<br>We look forward to hearing from you.</i> </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h1>Get in Touch</h1>
+                <div>Explore our help docs or</div>
+                <div>Contact our team</div>
+                <br>
+                <form class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <br>
+                    <input type="email" class="form-control" placeholder="Enter your mail">
+                    <br>
+                    <input type="tel" class="form-control" placeholder="Enter your phone number">
+                    <br>
+                    <textarea class="form-control" placeholder="How can i help you"></textarea>
+                    <br>
+                    <button class="btn signin" style="background-color:greenyellow;">Send Message</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- popups -->
+<div class="popup">
+  <button id="close">&times;</button>
+  <h1 style="color: rgb(187, 172, 172); background-color: black;">Flat---10% of end of season sale</h1>
+  
+  <img src="advers.jpg" alt="" srcset="">
+  
+</div>
+<!--Script-->
+<script src="script.js"></script>
+<br>
+<br>
+<!-- accordian -->
+<center><h1 style="background-color: purple; color: white;">People will ask </h1></center>
+<br>
+<div style="border: 5px solid red; margin: 10px; padding:20px;">
+<div class="accordion " id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button fs-5"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+        Why Tanishq is so expensive?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p style="font-size: 20px;">Tanishq is known for its high-quality diamonds, exceptional craftsmanship, and stringent quality standards.<br> This brand's strong market presence and customer trust ensure that its jewellery retains value over time..</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Who is owner of tanishq jewellery?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p style="font-size: 20px;">Tanishq is a brand of jewellery retail stores in India. The brand is the property of Titan Company,<br> which is back by Tata Group and TIDCO.<br> The name Tanishq was chosen by Titan's first managing director Xerxes Desai.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Can we exchange tanishq jewellery?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p style="font-size: 20px;">The Tanishq exchange policy offers customers the convenience of exchanging jewellery through the program.<br> This program allows individuals to upgrade or exchange<br> their existing Tanishq jewellery for newer pieces.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Location -->
+<section id="loc" class="container-fluid">
+  <h1>Location</h1>
+  
+  <br>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8205474077836!2d77.54807677412057!3d12.983326914623003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3df3ea4eedc9%3A0xcb7374666255e689!2s64th%20Cross%20Rd%2C%205th%20Block%2C%20Rajajinagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1703957094998!5m2!1sen!2sin" height="400" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<br><br>
+<!-- footer -->
+<footer id="footer" class="footer">
+
+  <div class="footer-content position-relative">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-info">
+            <h3>Tanishq Jewellary</h3>
+            <p>
+              Bangalore <br>
+              karnataka, India<br><br>
+              <strong>Phone:</strong> +91 6300212822<br>
+              <strong>Email:</strong> tanishqjewellary@gmail.com<br>
+            </p>
+            <div class="social-links d-flex mt-3">
+              
+              <!-- instagram -->
+                
+              <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+              <i class="bi bi-instagram"></i></a>
+              <!-- whatsapp -->
+              
+              <a href="#" class="d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+              <i class="bi bi-linkedin"></i></a>
+              <!-- whatsapp -->
+              <a href="https://web.whatsapp.com/" class="d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+              <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div><!-- End footer info column-->
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div><!-- End footer links column-->
+
+      
+         <div class="col-lg-2 col-md-3 footer-links">
+          <img src="logo.jpg" alt="" width="400px"; height="300px";>
+         </div>
+        
+        <!-- End footer links column-->
+
+
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  
+    
+  
+  <hr>
+
+  <div class="footer-legal text-center position-relative">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tanishq Jewellary</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+  
+        Designed byTanishq Designer.</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+</body>
+</html>
